@@ -1,0 +1,239 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://investor.homeunion.com/"
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "You can modify your portfolio by changing"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Welcome to your customizable real estate investment portfolio"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "How does it work? (Video)"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Get Started"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "REGISTER TO SEE MORE"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Help Center"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Login"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login-link"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "4000"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Login to your account"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Forgot your password ?"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Don't have an account? Sign Up"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "button.close"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "FINANCING"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "OPTION 1"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "OPTION 2"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "OPTION 3"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "SEE PROPERTY LIST"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Properties shown with financing"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "All Return, Cashflow, and Appreciation data are projections. Please see our disclaimers below."
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login-link"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "4000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "login-username-input"
+      },
+      "text": "demo@panalinks.com"
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "login-password-input"
+      },
+      "text": "123456"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login-btn"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "4000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Browse"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Portfolios"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Property Search"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "14000"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Properties shown with financing"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "All Return, Cashflow, and Appreciation data are projections. Please see our disclaimers below."
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "SEARCH"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "MIN RETURN %"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "MIN APPRECIATION %"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PROPERTY CLASS"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PROPERTY PRICE RANGE"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "YEAR BUILT (YYYY)"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "LOCATIONS"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Multi-unit Only"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='header-inner']/ul/li[2]/a"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "logout-link"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
